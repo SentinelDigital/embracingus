@@ -12325,4 +12325,8 @@ p.remind-43 {
   display: table;
 }
 
+.honeypot-field {
+  display: none;
+}
+
 /*# sourceMappingURL=slides.css.map */
