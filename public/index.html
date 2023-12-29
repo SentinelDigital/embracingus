@@ -488,13 +488,21 @@
           <p class="hero ae-2 margin-bottom-3"><span class="opacity-8">Get information or submit inquiries</span></p>
 <!-- class slides-form margin-bottom-3 or gform -->
           <form class="slides-form" action="https://script.google.com/a/macros/sentineldigital.com/s/AKfycbyLAjbTq-HU8aLIqRbPeWtVIoDD5drCLji61wpkKnMN75MxT7BnhL3cTdCR8kzEVAE0Lw/exec" method="POST" autocomplete="off" >
+            <div class="form-elements">
             <input type="text" class="ae-3" name="name" placeholder="Your Name"/><br>
             <input type="email" class="ae-3" name="email" placeholder="E-mail address"/><br>
             <input type="tel" class="ae-3" name="phone" placeholder="Phone Number"/><br>
             <input type="text" class="ae-3" name="message" placeholder="Message"/><br>
 
+              <fieldset class="pure-group honeypot-field">
+                <label for="honeypot">To help avoid spam, utilize a Honeypot technique with a hidden text field; must be empty to submit the form! Otherwise, we assume the user is a spam bot.</label>
+                <input id="honeypot" type="text" name="honeypot" value="" />
+
+              </fieldset>
+
 
             <button type="submit" class="button blue gradient ae-4" name="submit">Submit</button>
+            </div>>
 
             <div style="display:none" class="thankyou_message">
               <!-- You can customize the thankyou message by editing the code below -->
@@ -503,6 +511,11 @@
             </div>
 
           </form>
+
+          <!-- Submit the Form to Google Using "AJAX" -->
+          <script data-cfasync="false" type="text/javascript" src="form-submission-handler.js"></script>
+
+
           <p class="ae-2 fromLeft"><span class="opacity-8">The Kuumba Community LLC<br>7901 4th St N STE 300<br>St. Petersburg, FL 33702, USA</span></p>
 
           <!--a href="#" class="button hollow ae-5"><img src="assets/img/appstore.jpg" height="63"/></a><a href="#" class="button hollow ae-6"><img src="assets/img/googleplay.jpg" height="63"/></a-->
@@ -546,7 +559,6 @@
 <!-- Loading Progress Bar -->
 <div class="progress-bar blue"></div>
 
-<script data-cfasync="false" type="text/javascript" src="form-submission-handler.js"></script>
 
 		
 </body>
