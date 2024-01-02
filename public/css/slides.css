@@ -943,6 +943,7 @@ p.uppercase, .p.uppercase,
 }
 .slides-form honeypot-field {
   display: none;
+  visibility:hidden;
 }
 .slides-form button {
   font-family: inherit;
