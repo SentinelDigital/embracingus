@@ -941,6 +941,9 @@ p.uppercase, .p.uppercase,
   margin-top: -5px;
   font-family: inherit;
 }
+.slides-form honeypot-field {
+  display: none;
+}
 .slides-form button {
   font-family: inherit;
 }
@@ -12325,8 +12328,6 @@ p.remind-43 {
   display: table;
 }
 
-.honeypot-field {
-  display: none;
-}
+
 
 /*# sourceMappingURL=slides.css.map */
