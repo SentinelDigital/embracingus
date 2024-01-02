@@ -942,8 +942,8 @@ p.uppercase, .p.uppercase,
   font-family: inherit;
 }
 .slides-form honeypot-field {
-  display: none;
-  visibility:hidden;
+  position: absolute !important;
+  visibility:hidden !important;
 }
 .slides-form button {
   font-family: inherit;
