@@ -941,10 +941,8 @@ p.uppercase, .p.uppercase,
   margin-top: -5px;
   font-family: inherit;
 }
-.slides-form honeypot-field {
-  position: absolute !important;
-  visibility:hidden !important;
-}
+
+
 .slides-form button {
   font-family: inherit;
 }
@@ -12321,6 +12319,11 @@ p.remind-43 {
      -moz-user-select: auto !important;
       -ms-user-select: auto !important;
           user-select: auto !important;
+}
+
+.honeypot-field {
+  position: absolute !important;
+  visibility:hidden !important;
 }
 
 .clearBoth:after {
