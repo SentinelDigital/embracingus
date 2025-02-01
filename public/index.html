@@ -9,6 +9,28 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+
+		<script>
+  (function(w, d, t, h, s, n) {
+    w.FlodeskObject = n;
+    var fn = function() {
+      (w[n].q = w[n].q || []).push(arguments);
+    };
+    w[n] = w[n] || fn;
+    var f = d.getElementsByTagName(t)[0];
+    var v = '?v=' + Math.floor(new Date().getTime() / (120 * 1000)) * 60;
+    var sm = d.createElement(t);
+    sm.async = true;
+    sm.type = 'module';
+    sm.src = h + s + '.mjs' + v;
+    f.parentNode.insertBefore(sm, f);
+    var sn = d.createElement(t);
+    sn.async = true;
+    sn.noModule = true;
+    sn.src = h + s + '.js' + v;
+    f.parentNode.insertBefore(sn, f);
+  })(window, document, 'script', 'https://assets.flodesk.com', '/universal', 'fd');
+</script>
 	</head>
 	<body class="index is-preload">
 		<div id="page-wrapper">
@@ -19,11 +41,19 @@
 					<img src="images/eu_logo.png" style="width:50px;height:50px">
 					<nav id="nav">
 						<ul>
-							<li class="current"><a href="index.html">Home</a></li>
-							<li><a href="about.html">About</a></li>
-							<li><a href="services.html">Services</a></li>
+							<li class="current"><a href="index.html" class="button primary">Home</a></li>
+							<li><a href="about.html" >About</a></li>
+							<li class="submenu" >
+								<a href="services.html">Services</a>
+								<ul>
+									<li><a href="retreats.html" >Retreats</a></li>
+									<li><a href="intensives.html" >Intensives</a></li>
+								</ul>
 							<li><a href="design-chart.html">BodyGraph</a></li>
-							<li class="submenu">
+							<li><a href="contact.html">Contact</a></li>
+							<li><a href="FAQs.html">FAQs</a></li>
+
+							<!--li class="submenu">
 								<a href="#">Layouts</a>
 								<ul>
 									<li><a href="left-sidebar.html">Left Sidebar</a></li>
@@ -41,8 +71,7 @@
 										</ul>
 									</li>
 								</ul>
-							</li>
-							<li><a href="#" class="button primary">Sign Up</a></li>
+							</li-->
 						</ul>
 					</nav>
 				</header>
@@ -127,7 +156,31 @@
 						</section>
 
 					<!-- Two -->
+
 					<section class="wrapper style3 container special">
+						<div class="content">
+						<header class="major">
+							<h2><strong>This is</strong> BIG!</h2>
+							<p>
+								Wisdom Within has huge ripple effects. You'll gain the tools and insights to create a more fulfilling and authentic life. By investing in your inner world, you'll create positive change in all areas of your life – your relationships, your work, your family, your sense of purpose. This… is a catalyst for lasting change.
+								Ready to embark on a journey of transformation?
+
+							</p>
+
+						</header>
+							<footer>
+								<ul class="buttons">
+									<li><a href="https://calendly.com/embracingus/20min" class="button">Book a Call</a></li>
+								</ul>
+							</footer>
+
+
+
+						</div>
+
+					</section>
+
+					<!--section class="wrapper style3 container special">
 
 						<header class="major">
 							<h2><strong>Wisdom Within</strong> Offerings</h2>
@@ -157,7 +210,7 @@
 
 							</div>
 						</div>
-						<!--div class="row">
+						<div class="row">
 							<div class="col-6 col-12-narrower">
 
 								<section>
@@ -180,7 +233,7 @@
 								</section>
 
 							</div>
-						</div-->
+						</div>
 
 						<footer class="major">
 							<ul class="buttons">
@@ -188,7 +241,7 @@
 							</ul>
 						</footer>
 
-					</section>
+					</section-->
 					<!-- Three -->
 					<section class="wrapper style1 container special">
 						<div class="row">
@@ -228,22 +281,27 @@
 						</div>
 					</section>
 
-
-
-
+					<div id="fd-form-679d17936a6ab186a695f426"></div>
+					<script>
+  						window.fd('form', {
+    						formId: '679d17936a6ab186a695f426',
+    						containerEl: '#fd-form-679d17936a6ab186a695f426'
+  						});
+					</script>
 				</article>
 
-			<!-- CTA -->
+
+					<!-- CTA-->
 				<section id="cta">
 
 					<header>
-						<h2>Ready to do <strong>something</strong>?</h2>
-						<p>Proin a ullamcorper elit, et sagittis turpis integer ut fermentum.</p>
+						<h2>Ready to do <strong>Start</strong>?</h2>
+						<p>Schedule and purchase your Wisdom Within offering now!</p>
 					</header>
 					<footer>
 						<ul class="buttons">
-							<li><a href="#" class="button primary">Take My Money</a></li>
-							<li><a href="#" class="button">LOL Wut</a></li>
+							<li><a href="https://calendly.com/embracingus/20min" class="button primary">Book a Retreat</a></li>
+							<li><a href="https://calendly.com/embracingus/20min" class="button">Book an Intensive</a></li>
 						</ul>
 					</footer>
 
@@ -266,7 +324,7 @@
 
 				</footer>
 
-		</div>
+
 
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>

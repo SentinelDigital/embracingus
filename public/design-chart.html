@@ -9,6 +9,30 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+
+		<script>
+  (function(w, d, t, h, s, n) {
+    w.FlodeskObject = n;
+    var fn = function() {
+      (w[n].q = w[n].q || []).push(arguments);
+    };
+    w[n] = w[n] || fn;
+    var f = d.getElementsByTagName(t)[0];
+    var v = '?v=' + Math.floor(new Date().getTime() / (120 * 1000)) * 60;
+    var sm = d.createElement(t);
+    sm.async = true;
+    sm.type = 'module';
+    sm.src = h + s + '.mjs' + v;
+    f.parentNode.insertBefore(sm, f);
+    var sn = d.createElement(t);
+    sn.async = true;
+    sn.noModule = true;
+    sn.src = h + s + '.js' + v;
+    f.parentNode.insertBefore(sn, f);
+  })(window, document, 'script', 'https://assets.flodesk.com', '/universal', 'fd');
+</script>
+
+
 	</head>
 	<body class="no-sidebar is-preload">
 		<div id="page-wrapper">
@@ -18,31 +42,37 @@
 					<h1 id="logo"><a href="index.html">Human <span>Design</span></a></h1>
 					<nav id="nav">
 						<ul>
-							<li class="current"><a href="index.html">Home</a></li>
+							<li><a href="index.html">Home</a></li>
 							<li><a href="about.html">About</a></li>
-							<li><a href="services.html">Services</a></li>
-							<li><a href="design-chart.html">BodyGraph</a></li>
 							<li class="submenu">
-								<a href="#">Layouts</a>
+								<a href="services.html">Services</a>
 								<ul>
-									<li><a href="left-sidebar.html">Left Sidebar</a></li>
-									<li><a href="right-sidebar.html">Right Sidebar</a></li>
-									<li><a href="no-sidebar.html">No Sidebar</a></li>
-									<li><a href="contact.html">Contact</a></li>
-									<li class="submenu">
-										<a href="#">Submenu</a>
-										<ul>
-											<li><a href="#">Dolore Sed</a></li>
-											<li><a href="#">Consequat</a></li>
-											<li><a href="#">Lorem Magna</a></li>
-											<li><a href="#">Sed Magna</a></li>
-											<li><a href="#">Ipsum Nisl</a></li>
-										</ul>
-									</li>
+									<li><a href="retreats.html">Retreats</a></li>
+									<li><a href="intensives.html">Intensives</a></li>
 								</ul>
-							</li>
-							<li><a href="#" class="button primary">Sign Up</a></li>
-						</ul>
+							<li class="current"><a href="design-chart.html" class="button primary">BodyGraph</a></li>
+							<li><a href="contact.html">Contact</a></li>
+							<li><a href="FAQs.html">FAQs</a></li>
+							<!--li class="submenu">
+                                <a href="#">Layouts</a>
+                                <ul>
+                                    <li><a href="left-sidebar.html">Left Sidebar</a></li>
+                                    <li><a href="right-sidebar.html">Right Sidebar</a></li>
+                                    <li><a href="no-sidebar.html">No Sidebar</a></li>
+                                    <li><a href="contact.html">Contact</a></li>
+                                    <li class="submenu">
+                                        <a href="#">Submenu</a>
+                                        <ul>
+                                            <li><a href="#">Dolore Sed</a></li>
+                                            <li><a href="#">Consequat</a></li>
+                                            <li><a href="#">Lorem Magna</a></li>
+                                            <li><a href="#">Sed Magna</a></li>
+                                            <li><a href="#">Ipsum Nisl</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li-->
+							</ul>
 					</nav>
 				</header>
 
@@ -122,6 +152,16 @@
 								</div>
 							</div>
 						</section-->
+
+					<!-- Subscribe -->
+					<div id="fd-form-679d17936a6ab186a695f426"></div>
+					<script>
+  window.fd('form', {
+    formId: '679d17936a6ab186a695f426',
+    containerEl: '#fd-form-679d17936a6ab186a695f426'
+  });
+</script>
+
 
 				</article>
 
